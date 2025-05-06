@@ -43,7 +43,7 @@ def upload():
     # Run processor in a separate process to avoid memory issues
     cmd = [
         "python",
-        str(BASE_DIR / "backend" / "overlay_processor.py"),
+        str(BASE_DIR / "overlay_processor.py"),
         str(input_path),
         str(MASK_PATH),
         str(output_path)
@@ -110,7 +110,7 @@ def process_inline():
     # Call overlay processor to apply mask
     cmd = [
         "python",
-        str(BASE_DIR / "backend" / "overlay_processor.py"),
+        str(BASE_DIR / "overlay_processor.py"),
         interm_mp4,
         str(mask_path),
         output_path,
