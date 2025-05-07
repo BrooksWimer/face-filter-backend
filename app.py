@@ -5,7 +5,7 @@ from flask_cors import CORS
 import tempfile, os
 
 # Set up file paths - need to handle uploads & processed videos
-BASE_DIR = pathlib.Path(__file__).resolve().parent.parent  # project root
+BASE_DIR = pathlib.Path(__file__).resolve().parent  # app directory
 UPLOAD_DIR = BASE_DIR / "uploads"
 PROCESSED_DIR = BASE_DIR / "processed"
 MASK_PATH = BASE_DIR / "masks" / "cat.png"  # Default mask
